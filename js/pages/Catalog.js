@@ -1,7 +1,4 @@
-import { icons } from '../utils/icons.js';
-import { CatalogDetails } from '../components/catalog/CatalogDetails.js';
-import { TablesView } from '../components/catalog/TablesView.js';
-
+// Simple application framework
 export class CatalogPage {
   constructor(params) {
     this.params = params;
@@ -227,6 +224,182 @@ export class CatalogPage {
     switch (this.currentSection) {
       case 'tables':
         contentContainer.innerHTML = TablesView();
+        break;
+      case 'query-tables':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Query Tables</h2>
+            <p>This is the Query Tables view.</p>
+          </div>
+        `;
+        break;
+      case 'columns':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Table Data Columns</h2>
+            <p>This is the Columns view.</p>
+          </div>
+        `;
+        break;
+      case 'relationships':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Relationships</h2>
+            <p>This is the Relationships view.</p>
+          </div>
+        `;
+        break;
+      case 'custom-formulas':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Formula Columns</h2>
+            <p>This is the Formula Columns view.</p>
+          </div>
+        `;
+        break;
+      case 'variables':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Variables</h2>
+            <p>This is the Variables view.</p>
+          </div>
+        `;
+        break;
+      case 'filter-criteria':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Filters</h2>
+            <p>This is the Filters view.</p>
+          </div>
+        `;
+        break;
+      case 'aggregate-formulas':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Aggregate Formula Columns</h2>
+            <p>This is the Aggregate Formula Columns view.</p>
+          </div>
+        `;
+        break;
+      case 'ml-models':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">ML Models</h2>
+            <p>This is the ML Models view.</p>
+          </div>
+        `;
+        break;
+      case 'custom-functions':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Custom Code Functions</h2>
+            <p>This is the Custom Code Functions view.</p>
+          </div>
+        `;
+        break;
+      case 'formatting':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Formatting</h2>
+            <p>This is the Formatting view.</p>
+          </div>
+        `;
+        break;
+      case 'data-cache-tables':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Data Cache Tables</h2>
+            <p>This is the Data Cache Tables view.</p>
+          </div>
+        `;
+        break;
+      case 'reports':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Reports</h2>
+            <p>This is the Reports view.</p>
+          </div>
+        `;
+        break;
+      case 'dashboards':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Dashboards</h2>
+            <p>This is the Dashboards view.</p>
+          </div>
+        `;
+        break;
+      case 'slideshows':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Slideshows</h2>
+            <p>This is the Slideshows view.</p>
+          </div>
+        `;
+        break;
+      case 'portals':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Portals</h2>
+            <p>This is the Portals view.</p>
+          </div>
+        `;
+        break;
+      case 'schedules':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Scheduled Actions</h2>
+            <p>This is the Scheduled Actions view.</p>
+          </div>
+        `;
+        break;
+      case 'askzia':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Ask Zia</h2>
+            <p>This is the Ask Zia view.</p>
+          </div>
+        `;
+        break;
+      case 'actions':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">AI Agents</h2>
+            <p>This is the AI Agents view.</p>
+          </div>
+        `;
+        break;
+      case 'channels':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Channels</h2>
+            <p>This is the Channels view.</p>
+          </div>
+        `;
+        break;
+      case 'users':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Users</h2>
+            <p>This is the Users view.</p>
+          </div>
+        `;
+        break;
+      case 'groups':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Groups</h2>
+            <p>This is the Groups view.</p>
+          </div>
+        `;
+        break;
+      case 'roles':
+        contentContainer.innerHTML = `
+          <div class="p-4">
+            <h2 class="text-xl font-semibold mb-4">Roles & Permissions</h2>
+            <p>This is the Roles & Permissions view.</p>
+          </div>
+        `;
         break;
       case 'data-sources':
       default:
