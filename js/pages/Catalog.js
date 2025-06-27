@@ -1,3 +1,5 @@
+import { icons } from '../utils/icons.js';
+
 // Simple application framework
 export class CatalogPage {
   constructor(params) {
