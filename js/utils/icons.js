@@ -52,10 +52,6 @@ export const icons = {
   shield: (props = {}) => createSvgIcon('Shield', 'M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z', props),
   box: (props = {}) => createSvgIcon('Box', 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4', props),
   
-  // Missing icons that were causing the error
-  cpu: (props = {}) => createSvgIcon('Cpu', 'M4 16v-2.5a2.5 2.5 0 012.5-2.5H9m7 0h2.5A2.5 2.5 0 0121 13.5V16M4 8v2.5A2.5 2.5 0 006.5 13H9m7 0h2.5a2.5 2.5 0 002.5-2.5V8m-12 4h6v6H9v-6z', props),
-  userCheck: (props = {}) => createSvgIcon('UserCheck', 'M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 3a4 4 0 100 8 4 4 0 000-8zm8.5 9l2 2 4-4', props),
-  
   // Utility icons
   sortDesc: (props = {}) => createSvgIcon('SortDesc', 'M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12', props),
   columns: (props = {}) => createSvgIcon('Columns', 'M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2', props),
@@ -76,15 +72,6 @@ export const icons = {
   
   // Additional icons
   hardDrive: (props = {}) => createSvgIcon('HardDrive', 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6', props),
-  
-  // Missing icons that were causing the TypeError
-  cloud: (props = {}) => createSvgIcon('Cloud', 'M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z', props),
-  server: (props = {}) => createSvgIcon('Server', 'M6 10H4a2 2 0 01-2-2V4c0-1.1.9-2 2-2h16a2 2 0 012 2v4a2 2 0 01-2 2h-2M6 10l6 6 6-6M6 10l6-6 6 6', props),
-  headphones: (props = {}) => createSvgIcon('Headphones', 'M3 18v-6a9 9 0 0118 0v6M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z', props),
-  briefcase: (props = {}) => createSvgIcon('Briefcase', 'M16 20V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v16m8 0H8m8 0h2a2 2 0 002-2V8a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2h2', props),
-  dollarSign: (props = {}) => createSvgIcon('DollarSign', 'M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6', props),
-  tool: (props = {}) => createSvgIcon('Tool', 'M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z', props),
-  bookOpen: (props = {}) => createSvgIcon('BookOpen', 'M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2V3zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7V3z', props),
 };
 
 function createSvgIcon(name, path, props = {}, needsFill = false) {
