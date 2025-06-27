@@ -1,4 +1,6 @@
 import { icons } from '../utils/icons.js';
+import { CatalogDetails } from '../components/catalog/CatalogDetails.js';
+import { TablesView } from '../components/catalog/TablesView.js';
 
 // Simple application framework
 export class CatalogPage {
