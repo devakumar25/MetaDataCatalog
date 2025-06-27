@@ -52,6 +52,10 @@ export const icons = {
   shield: (props = {}) => createSvgIcon('Shield', 'M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z', props),
   box: (props = {}) => createSvgIcon('Box', 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4', props),
   
+  // Missing icons that were causing the error
+  cpu: (props = {}) => createSvgIcon('Cpu', 'M4 16v-2.5a2.5 2.5 0 012.5-2.5H9m7 0h2.5A2.5 2.5 0 0121 13.5V16M4 8v2.5A2.5 2.5 0 006.5 13H9m7 0h2.5a2.5 2.5 0 002.5-2.5V8m-12 4h6v6H9v-6z', props),
+  userCheck: (props = {}) => createSvgIcon('UserCheck', 'M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M8.5 3a4 4 0 100 8 4 4 0 000-8zm8.5 9l2 2 4-4', props),
+  
   // Utility icons
   sortDesc: (props = {}) => createSvgIcon('SortDesc', 'M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12', props),
   columns: (props = {}) => createSvgIcon('Columns', 'M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2', props),
